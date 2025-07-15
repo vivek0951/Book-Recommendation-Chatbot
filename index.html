@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Book Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">📚 BookSage</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Add to Cart</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search books..." />
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <!-- Book Section -->
+  <section class="book-section">
+    <h2>Popular Books</h2>
+    <div class="book-grid">
+      <!-- 8 Books -->
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10523312-L.jpg" alt="Book">
+        <h3>The Silent Patient</h3>
+        <p class="price">₹499</p>
+      </div>
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10212438-L.jpg" alt="Book">
+        <h3>Atomic Habits</h3>
+        <p class="price">₹399</p>
+      </div>
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10496783-L.jpg" alt="Book">
+        <h3>It Ends With Us</h3>
+        <p class="price">₹429</p>
+      </div>
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10630773-L.jpg" alt="Book">
+        <h3>The Psychology of Money</h3>
+        <p class="price">₹349</p>
+      </div>
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10909258-L.jpg" alt="Book">
+        <h3>Think Like a Monk</h3>
+        <p class="price">₹369</p>
+      </div>
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/11153264-L.jpg" alt="Book">
+        <h3>Verity</h3>
+        <p class="price">₹449</p>
+      </div>
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10310233-L.jpg" alt="Book">
+        <h3>Rich Dad Poor Dad</h3>
+        <p class="price">₹299</p>
+      </div>
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10547006-L.jpg" alt="Book">
+        <h3>Ikigai</h3>
+        <p class="price">₹289</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login / Signup Section -->
+  <section class="auth-section">
+    <h2>Login / Signup</h2>
+    <div class="auth-forms">
+      <form class="form-box">
+        <h3>Login</h3>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <form class="form-box">
+        <h3>Signup</h3>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </section>
+  <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "8c8bad7e-71f7-414d-ad7e-048447212721", // The ID of this integration.
+    region: "eu-de", // The region your integration is hosted in.
+    serviceInstanceID: "247708e7-e2ca-4ea8-b66a-eb093bb3a4c6", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
